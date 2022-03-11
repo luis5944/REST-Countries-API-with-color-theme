@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/REST-Countries-API-with-color-theme/static/js/main.f4152d23.js",
+    "main.js": "/REST-Countries-API-with-color-theme/static/js/main.c3834df4.js",
     "index.html": "/REST-Countries-API-with-color-theme/index.html",
-    "main.f4152d23.js.map": "/REST-Countries-API-with-color-theme/static/js/main.f4152d23.js.map"
+    "main.c3834df4.js.map": "/REST-Countries-API-with-color-theme/static/js/main.c3834df4.js.map"
   },
   "entrypoints": [
-    "static/js/main.f4152d23.js"
+    "static/js/main.c3834df4.js"
   ]
 }
