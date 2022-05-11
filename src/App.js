@@ -4,7 +4,7 @@ import { lightTheme, darkTheme } from "./theme";
 import { GlobalStyles } from "./styles";
 import AppBar from "./components/AppBar";
 import CountryList from "./components/CountryList";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import CountryPage from "./components/CountryPage";
 import { useDispatch } from "react-redux";
 import { getAllCountries } from "./reducers/countriesReducer";
@@ -22,9 +22,11 @@ function App() {
     dispatch(getAllCountries());
   }, [dispatch]);
 
+  
+
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-      <BrowserRouter>
+      <HashRouter>
         <GlobalStyles />
         <AppBar theme={theme} setTheme={setTheme} />
         {!isCountryPage && (
@@ -47,7 +49,7 @@ function App() {
             element={<CountryPage setIsCountryPage={setIsCountryPage}/>}
           />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }
